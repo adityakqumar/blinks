@@ -1,1 +1,25 @@
-aditya
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashlight Blinker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="/manifest.json">
+
+</head>
+<body>
+  <div class="app">
+    <h1>Flashlight Blinker</h1>
+    <button id="toggleFlashlight">Start Flashlight</button>
+    <select id="patternSelector">
+      <option value="steady">Steady Blink</option>
+      <option value="sos">SOS</option>
+      <option value="custom">Custom Pattern</option>
+    </select>
+    <input type="range" id="blinkSpeed" min="100" max="1000" step="100" value="500">
+    <label for="blinkSpeed">Blink Speed (ms)</label>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
